@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergency Hotline</title>
-    <!-- tittle img  -->
+    <title>Emargency Service</title>
+    <!-- title logo  -->
     <link rel="shortcut icon" href="assets/logo-dark.png" type="image/x-icon" />
-    <!-- daisy ui cdn  -->
+    <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- font awsome cdn  -->
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -20,16 +22,79 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
-      .hind-madurai-light {
-        font-family: "Hind Madurai", sans-serif;
-        font-style: normal;
-      }
-    </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="bg-[#41ff6b1a]">
+    <!-- nav section -->
+    <div
+      class="flex justify-between max-h-24 px-14 py-6 bg-white sm:"
+    >
+      <div class="flex gap-2">
+        <img class="w-12 h-12" src="assets/logo.png" alt="" />
+        <h3 class="font-extrabold text-[#006747]">
+          Emargency <br />
+          Service
+        </h3>
+      </div>
+      <div>
+        <button onclick="copyNumber" class="btn bg-[#41ff6b1a] rounded-[50px]">
+          0 <span class="text-[20px]">❤️</span>
+        </button>
+        <button class="btn bg-[#41ff6b1a] rounded-[50px]">
+          100 <span class="text-[20px]">🪙</span>
+        </button>
+        <button class="btn bg-[#00a63e] rounded-[50px] text-white">
+          2 Copy
+        </button>
+      </div>
+    </div>
+    <!-- banner section  -->
+    <div
+      class="max-h-[230px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white flex flex-col justify-center items-center py-5"
+    >
+      <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="" />
+      <h1 class="font-[700] text-[30px] my-3">Emergency Service Directory</h1>
+      <p>
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+    <!-- card and history section  -->
+    <div>
+      <!-- cards section  -->
+      <div>
+        <!-- card section - 1  -->
+        <div class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]">
+          <div class="flex justify-between items-center">
+            <div class="w-[60px] h-[60px]  rounded-2xl bg-[#ffe3e2] flex justify-center items-center">
+              <img class="w-[30px] h-[30px]" src="assets/emergency.png" alt="">
+            </div>
+            <button class="btn bg-white border-none w-0 h-0 hover:text-red-600">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <h3 class="font-bold text-[24px]">National Emergency Number</h3>
+          <p class="mb-6 text-[#5c5c5c]">National Emergency</p>
+          <h3 class="font-bold text-[24px]">999</h3>
+          <span class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]">All</span>
+          <div class="flex gap-3">
+           <button class="btn bg-white font-normal w-1/2 rounded-lg text-[#5c5c5c]"><i class="fa-regular fa-copy "></i>Copy</button>
+           <button class="btn bg-[#00a63e] text-white font-normal w-1/2 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+          </div>
+          
+        </div>
+
+
+
+<!--  -->
+        <!-- <div class="card w-96 bg-base-100 shadow-sm">
+          <div class="card-body">
+            <img src="assets/emergency.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </div> -->
+      <!-- history section  -->
+      <div></div>
+    </div>
   </body>
 </html>
