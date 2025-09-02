@@ -13,8 +13,8 @@ const cardCopys = document.getElementsByClassName("card-copy");
 for (const cardCopy of cardCopys) {
   cardCopy.addEventListener("click", function () {
     const navCopyNumber = document.getElementById("copy-number").innerText;
+    const numberToCopy = cardCopy.parentNode.parentNode.children[3].innerText;
     const updatedCopyNumber = Number(navCopyNumber) + 1;
-    const numberToCopy = document.getElementById("hotline-number").innerText;
     document.getElementById("copy-number").innerText = updatedCopyNumber;
     navigator.clipboard.writeText(numberToCopy).then(() => {
       alert("Number copied!");
@@ -55,6 +55,7 @@ for (const callbtn of callbtns) {
         </div>
     `;
       historyCard.append(newCard);
+      alert(`Calling ${cardTitle} - ${cardNumber}`);
     }
   });
 }
