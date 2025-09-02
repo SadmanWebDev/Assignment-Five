@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
-    <!-- title logo  -->
     <link rel="shortcut icon" href="assets/logo-dark.png" type="image/x-icon" />
-    <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font awesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -26,23 +22,23 @@
   <body class="bg-[#41ff6b1a]">
     <!-- nav section -->
     <div
-      class="fixed top-0 left-0 w-full flex justify-between max-h-24 px-14 py-6 shadow-md bg-white z-50"
+      class="fixed top-0 left-0 w-full flex flex-col sm:flex-row justify-between items-center px-4 sm:px-14 py-4 sm:py-6 shadow-md bg-white z-50"
     >
       <div class="flex gap-2">
-        <img class="w-12 h-12" src="assets/logo.png" alt="" />
-        <h3 class="font-extrabold text-[#006747]">
+        <img class="w-10 h-10 sm:w-12 sm:h-12" src="assets/logo.png" alt="" />
+        <h3 class="font-extrabold text-[#006747] text-sm sm:text-base">
           Emergency <br />
           Service
         </h3>
       </div>
-      <div>
+      <div class="mt-2 sm:mt-0 flex gap-1 sm:gap-2">
         <button class="btn bg-[#41ff6b1a] rounded-[50px]">
           <span id="heart-number">0</span>
-          <span class="text-[20px]">❤️</span>
+          <span class="text-sm sm:text-[20px]">❤️</span>
         </button>
         <button class="btn bg-[#41ff6b1a] rounded-[50px]">
           <span id="coin">100</span>
-          <span class="text-[20px]">🪙</span>
+          <span class="text-sm sm:text-[20px]">🪙</span>
         </button>
         <button class="btn bg-[#00a63e] rounded-[50px] text-white">
           <span id="copy-number">2</span>
@@ -52,11 +48,17 @@
     </div>
     <!-- banner section  -->
     <div
-      class="max-h-[230px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white flex flex-col justify-center items-center py-5 mt-24"
+      class="max-h-[230px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white flex flex-col justify-center items-center py-7 mt-24 sm:mt-20 text-center px-4"
     >
-      <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="" />
-      <h1 class="font-[700] text-[30px] my-3">Emergency Service Directory</h1>
-      <p>
+      <img
+        class="w-[72px] h-[72px] sm:w-[92px] sm:h-[92px]"
+        src="assets/logo-dark.png"
+        alt=""
+      />
+      <h1 class="font-[700] text-lg sm:text-[30px] my-2 sm:my-3">
+        Emergency Service Directory
+      </h1>
+      <p class="text-xs sm:text-base">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
@@ -64,21 +66,24 @@
     <!-- card and history section  -->
     <div
       id="card-history-section"
-      class="w-11/12 mx-auto py-10 grid grid-cols-12"
+      class="w-11/12 mx-auto py-5 sm:py-10 flex flex-col lg:grid lg:grid-cols-12"
     >
       <!-- cards section  -->
-      <div id="card-section" class="grid grid-cols-3 col-span-9 gap-6">
+      <div
+        id="card-section"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 col-span-12 lg:col-span-9"
+      >
         <!-- card section - 1  -->
         <div
           id="card-1"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
                 src="assets/emergency.png"
                 alt=""
               />
@@ -89,11 +94,15 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">National Emergency Number</h3>
-          <p class="mb-6 text-[#5c5c5c]">National Emergency</p>
-          <h3 id="hotline-number" class="font-bold text-[24px]">999</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            National Emergency Number
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">National Emergency</p>
+          <h3 id="hotline-number" class="font-bold text-lg sm:text-[24px]">
+            999
+          </h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >All</span
           >
           <div class="flex gap-3">
@@ -112,13 +121,17 @@
         <!-- card section - 2  -->
         <div
           id="card-2"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#dfefff] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#dfefff] flex justify-center items-center"
             >
-              <img class="w-[30px] h-[30px]" src="assets/police.png" alt="" />
+              <img
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
+                src="assets/police.png"
+                alt=""
+              />
             </div>
             <button
               class="btn card-heart bg-white border-none w-0 h-0 hover:text-red-600"
@@ -126,11 +139,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Police Helpline Number</h3>
-          <p class="mb-6 text-[#5c5c5c]">Police</p>
-          <h3 class="font-bold text-[24px]">999</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Bangladesh Police Helpline Number
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Police</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">999</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Police</span
           >
           <div class="flex gap-3">
@@ -149,14 +164,14 @@
         <!-- card section - 3  -->
         <div
           id="card-3"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
                 src="assets/fire-service.png"
                 alt=""
               />
@@ -167,11 +182,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Fire Service Number</h3>
-          <p class="mb-6 text-[#5c5c5c]">Fire Service</p>
-          <h3 class="font-bold text-[24px]">999</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Bangladesh Fire Service Number
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Fire Service</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">999</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Fire</span
           >
           <div class="flex gap-3">
@@ -190,14 +207,14 @@
         <!-- card section - 4  -->
         <div
           id="card-4"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
                 src="assets/ambulance.png"
                 alt=""
               />
@@ -208,11 +225,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Ambulance Service</h3>
-          <p class="mb-6 text-[#5c5c5c]">Ambulance</p>
-          <h3 class="font-bold text-[24px]">1994-999999</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Bangladesh Ambulance Service
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Ambulance</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">1994-999999</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Health</span
           >
           <div class="flex gap-3">
@@ -231,15 +250,15 @@
         <!-- card section - 5  -->
         <div
           id="card-5"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#FFFFDF] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
-                src="assets/emergency.png"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
+                src="assets/woman-children.png"
                 alt=""
               />
             </div>
@@ -249,11 +268,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Women & Child Helpline</h3>
-          <p class="mb-6 text-[#5c5c5c]">Women & Child Helpline</p>
-          <h3 class="font-bold text-[24px]">109</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Women & Child Helpline
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Women & Child Helpline</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">109</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Help</span
           >
           <div class="flex gap-3">
@@ -272,15 +293,15 @@
         <!-- card section - 6  -->
         <div
           id="card-6"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#FFFACD] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
-                src="assets/emergency.png"
+                class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]"
+                src="assets/anti-corruption.png"
                 alt=""
               />
             </div>
@@ -290,11 +311,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Anti-Corruption Helpline</h3>
-          <p class="mb-6 text-[#5c5c5c]">Anti-Corruption</p>
-          <h3 class="font-bold text-[24px]">106</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Anti-Corruption Helpline
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Anti-Corruption</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">106</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Govt</span
           >
           <div class="flex gap-3">
@@ -313,14 +336,14 @@
         <!-- card section - 7  -->
         <div
           id="card-7"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#FFFACD] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
+                class="w-[30px] h-[30px] sm:w-[30px] sm:h-[30px]"
                 src="assets/electricity.png"
                 alt=""
               />
@@ -331,11 +354,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Electricity Helpline</h3>
-          <p class="mb-6 text-[#5c5c5c]">Electricity Outage</p>
-          <h3 class="font-bold text-[24px]">16216</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Bangladesh Electricity Helpline
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Electricity Outage</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">16216</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Electricity</span
           >
           <div class="flex gap-3">
@@ -354,14 +379,14 @@
         <!-- card section - 8  -->
         <div
           id="card-8"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#E0FFE0] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
                 src="assets/As-Sunnah_Foundation.png"
                 alt=""
               />
@@ -372,11 +397,13 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">As-Sunnah Foundation Number</h3>
-          <p class="mb-6 text-[#5c5c5c]">As-Sunnah</p>
-          <h3 class="font-bold text-[24px]">09610-001089</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            As-Sunnah Foundation Number
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">As-Sunnah</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">09610-001089</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
             >Foundation</span
           >
           <div class="flex gap-3">
@@ -392,18 +419,18 @@
             </button>
           </div>
         </div>
-        <!-- card section - 6  -->
+        <!-- card section - 9  -->
         <div
-          id="card-6"
-          class="card bg-base-100 w-fit rounded-xl shadow-sm p-[32px]"
+          id="card-9"
+          class="card bg-base-100 rounded-xl shadow-sm p-4 sm:p-[32px] w-full"
         >
           <div class="flex justify-between items-center">
             <div
-              class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"
+              class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] rounded-2xl bg-[#EEDFCC] flex justify-center items-center"
             >
               <img
-                class="w-[30px] h-[30px]"
-                src="assets/emergency.png"
+                class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"
+                src="assets/Bangladesh-Railway.png"
                 alt=""
               />
             </div>
@@ -413,12 +440,14 @@
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
-          <h3 class="font-bold text-[24px]">Anti-Corruption Helpline</h3>
-          <p class="mb-6 text-[#5c5c5c]">Anti-Corruption</p>
-          <h3 class="font-bold text-[24px]">106</h3>
+          <h3 class="font-bold text-lg sm:text-[24px]">
+            Bangladesh Railway Helpline
+          </h3>
+          <p class="mb-4 sm:mb-6 text-[#5c5c5c]">Bangladesh Railway</p>
+          <h3 class="font-bold text-lg sm:text-[24px]">163</h3>
           <span
-            class="w-fit bg-[#f2f2f2] py-[6px] px-[16px] mb-6 text-[#5c5c5c] rounded-[9999px]"
-            >Govt</span
+            class="w-fit bg-[#f2f2f2] py-[4px] px-[12px] mb-4 sm:mb-6 text-[#5c5c5c] rounded-[9999px] text-xs"
+            >Travels</span
           >
           <div class="flex gap-3">
             <button
@@ -435,33 +464,24 @@
         </div>
       </div>
       <!-- history section  -->
-      <div class="bg-white col-span-3 w-fit h-fit p-6 ml-7 rounded-xl">
+      <div
+        class="bg-white col-span-12 lg:col-span-3 w-full h-fit p-4 sm:p-6 mt-6 lg:mt-0 lg:ml-7 rounded-xl"
+      >
         <div class="flex justify-between items-center gap-24">
-          <span class="font-semibold"
+          <span class="font-semibold text-sm sm:text-base"
             ><i class="fa-regular fa-clock text-gray-600"></i> Call
             History</span
           >
           <button
             id="clear-history"
-            class="btn rounded-full bg-[#00a63e] hover:bg-[#008f35] text-white"
+            class="btn rounded-full bg-[#00a63e] hover:bg-[#008f35] text-white btn-sm sm:btn-md"
           >
             Clear
           </button>
         </div>
         <div id="history-card"></div>
-        <!-- call history   -->
-        <!-- <div
-          class="flex justify-between items-center bg-[#fafafa] w-full p-4 m-0 mt-4 rounded-lg"
-        >
-          <div>
-            <h1 class="text-lg font-semibold">Fire Service Number</h1>
-            <p>999</p>
-          </div>
-          <p>TIME!</p>
-        </div> -->
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

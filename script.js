@@ -17,7 +17,7 @@ for (const cardCopy of cardCopys) {
     const updatedCopyNumber = Number(navCopyNumber) + 1;
     document.getElementById("copy-number").innerText = updatedCopyNumber;
     navigator.clipboard.writeText(numberToCopy).then(() => {
-      alert("Number copied!");
+      alert(`${numberToCopy} copied!`);
     });
   });
 }
